@@ -35,3 +35,25 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.opt.number = true -- Make line numbers default (default: false)
+vim.opt.relativenumber = true -- Set relative numbered lines (default: false)
+vim.opt.wrap = true -- wrap lines
+vim.opt.linebreak = true -- Companion to wrap, don't split words (default: false)
+vim.opt.colorcolumn = "120"
+vim.opt.textwidth = 120
+vim.opt.mouse = 'a' -- Enable mouse mode (default: '')
+vim.opt.autoindent = true -- Copy indent from current line when starting new one (default: true)
+vim.opt.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search (default: false)
+vim.opt.smartcase = true -- Smart case (default: false)
+vim.opt.smarttab = true
+vim.opt.shiftwidth = 4 -- The number of spaces inserted for each indentation (default: 8)
+vim.opt.tabstop = 4 -- Insert n spaces for a tab (default: 8)
+vim.opt.softtabstop = 4 -- Number of spaces that a tab counts for while performing editing operations (default: 0)
+vim.opt.expandtab = true -- Convert tabs to spaces (default: false)
+vim.opt.cursorline = true -- Highlight the current line (default: false)
+vim.opt.termguicolors = true -- Set termguicolors to enable highlight groups (default: false)
+vim.opt.numberwidth = 4 -- Set number column width to 2 {default 4} (default: 4)
+vim.opt.smartindent = true -- Make indenting smarter again (default: false)
+vim.opt.backspace = 'indent,eol,start' -- Allow backspace on (default: 'indent,eol,start')
+vim.opt.breakindent = true -- Enable break indent (default: false)
